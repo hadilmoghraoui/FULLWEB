@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>hadil shop -website</title>
+ <meta name="viewport"  content="width =   device-width , initial-scale=1">
+ <link rel="stylesheet" href="style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    <section id="banner">
+        <div class="banner-text">
+            <h1>Flower Shop</h1>
+            <p>Where the flowers bloom, so does hope</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read more</a>
+            </div>
+        </div>
+        <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Meet us</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div id="menubtn">
+            <img src="images/menu.png" id="menu" >
+        </div>
+        <script>
+            var menubtn =document.getElementById("menubtn")
+            var sideNav =document.getElementById("sideNav")
+            var menu =document.getElementById("menu")
+            sideNav.style.right ="-250px";
+            menubtn.onclick= function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+                    menu.src = "images/close.png";
+                }
+                else {
+                    sideNav.style.right = "-250px";
+                    menu.src = "images/menu.png";
+                }
+            }   
+        </script>
+    </section>
+</body>
+</html>
